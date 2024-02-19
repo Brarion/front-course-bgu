@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пётр I</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Навбар -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/favicon/android-chrome-192x192.png" style="width: 50px; height: auto" alt="Логотип">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="aboutUs.html">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="priceList.html">Прайс-лист</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Галерея</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#account">Личный кабинет</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+
+<style>
+  .toggle-button.rotate {
+    transform: rotate(45deg);
+  }
+</style>
+
+<div class="container">
+  <h2 style="text-align: center">Часто задаваемые вопросы</h2>
+
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div id="accordion1" class="question mb-4" onclick="toggleAnswer('answer1', 'button1')">
+        <p class="question-text">Какую технику вы ремонтируете?</p>
+        <button id="button1" class="toggle-button">+</button>
+      </div>
+      <div id="answer1" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Какую технику вы ремонтируете?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion2" class="question mb-4" onclick="toggleAnswer('answer2', 'button2')">
+        <p class="question-text">Сколько времени займет диагностика?</p>
+        <button id="button2" class="toggle-button">+</button>
+      </div>
+      <div id="answer2" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Сколько времени займет диагностика?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion3" class="question mb-4" onclick="toggleAnswer('answer3', 'button3')">
+        <p class="question-text">Диагностика платная?</p>
+        <button id="button3" class="toggle-button">+</button>
+      </div>
+      <div id="answer3" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Диагностика платная?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion4" class="question mb-4" onclick="toggleAnswer('answer4', 'button4')">
+        <p class="question-text">Сколько времени займет ремонт?</p>
+        <button id="button4" class="toggle-button">+</button>
+      </div>
+      <div id="answer4" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Сколько времени займет ремонт?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion5" class="question mb-4" onclick="toggleAnswer('answer5', 'button5')">
+        <p class="question-text">Когда я узнаю цену ремонта?</p>
+        <button id="button5" class="toggle-button">+</button>
+      </div>
+      <div id="answer5" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Когда я узнаю цену ремонта?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion6" class="question mb-4" onclick="toggleAnswer('answer6', 'button6')">
+        <p class="question-text">Если меня не устроит цена ремонта?</p>
+        <button id="button6" class="toggle-button">+</button>
+      </div>
+      <div id="answer6" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Если меня не устроит цена ремонта?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion7" class="question mb-4" onclick="toggleAnswer('answer7', 'button7')">
+        <p class="question-text">Когда оплачивать ремонт?</p>
+        <button id="button7" class="toggle-button">+</button>
+      </div>
+      <div id="answer7" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Когда оплачивать ремонт?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion8" class="question mb-4" onclick="toggleAnswer('answer8', 'button8')">
+        <p class="question-text">Могу я протестировать устройство, прежде чем оплачивать?</p>
+        <button id="button8" class="toggle-button">+</button>
+      </div>
+      <div id="answer8" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Могу я протестировать устройство, прежде чем оплачивать?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion9" class="question mb-4" onclick="toggleAnswer('answer9', 'button9')">
+        <p class="question-text">Есть гарантия на ремонт?</p>
+        <button id="button9" class="toggle-button">+</button>
+      </div>
+      <div id="answer9" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Есть гарантия на ремонт?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion10" class="question mb-4" onclick="toggleAnswer('answer10', 'button10')">
+        <p class="question-text">Есть ли гарантия на обслуживание?</p>
+        <button id="button10" class="toggle-button">+</button>
+      </div>
+      <div id="answer10" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Есть ли гарантия на обслуживание?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion11" class="question mb-4" onclick="toggleAnswer('answer11', 'button11')">
+        <p class="question-text">Если у меня гарантийный случай?</p>
+        <button id="button11" class="toggle-button">+</button>
+      </div>
+      <div id="answer11" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Если у меня гарантийный случай?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion12" class="question mb-4" onclick="toggleAnswer('answer12', 'button12')">
+        <p class="question-text">Если у меня еще есть гарантия от производителя?</p>
+        <button id="button12" class="toggle-button">+</button>
+      </div>
+      <div id="answer12" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Если у меня еще есть гарантия от производителя?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion13" class="question mb-4" onclick="toggleAnswer('answer13', 'button13')">
+        <p class="question-text">У вас много возвратов?</p>
+        <button id="button13" class="toggle-button">+</button>
+      </div>
+      <div id="answer13" class="answer" style="display: none;">
+        <p>Ответ на вопрос "У вас много возвратов?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion14" class="question mb-4" onclick="toggleAnswer('answer14', 'button14')">
+        <p class="question-text">Где ваши офисы?</p>
+        <button id="button14" class="toggle-button">+</button>
+      </div>
+      <div id="answer14" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Где ваши офисы?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion15" class="question mb-4" onclick="toggleAnswer('answer15', 'button15')">
+        <p class="question-text">В какое время можно привезти технику?</p>
+        <button id="button15" class="toggle-button">+</button>
+      </div>
+      <div id="answer15" class="answer" style="display: none;">
+        <p>Ответ на вопрос "В какое время можно привезти технику?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion16" class="question mb-4" onclick="toggleAnswer('answer16', 'button16')">
+        <p class="question-text">Как можно привезти технику?</p>
+        <button id="button16" class="toggle-button">+</button>
+      </div>
+      <div id="answer16" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Как можно привезти технику?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion17" class="question mb-4" onclick="toggleAnswer('answer17', 'button17')">
+        <p class="question-text">Кто оплачивает доставку?</p>
+        <button id="button17" class="toggle-button">+</button>
+      </div>
+      <div id="answer17" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Кто оплачивает доставку?"</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div id="accordion18" class="question mb-4" onclick="toggleAnswer('answer18', 'button18')">
+        <p class="question-text">Способы оплаты</p>
+        <button id="button18" class="toggle-button">+</button>
+      </div>
+      <div id="answer18" class="answer" style="display: none;">
+        <p>Ответ на вопрос "Способы оплаты"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="bg-light py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-center text-lg-start">
+        <img src="img/footerLogo.jpg" alt="Логотип" height="55">
+      </div>
+      <div class="col-lg-6 text-center text-lg-end">
+        <a href="#" class="btn btn-primary me-2" onclick="showPopup('Facebook')">Facebook</a>
+        <a href="#" class="btn btn-primary me-2" onclick="showPopup('Twitter')">Twitter</a>
+        <a href="#" class="btn btn-primary me-2" onclick="showPopup('Instagram')">Instagram</a>
+        <p class="mb-0">Телефон: +7 123 456 789</p>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col text-center">
+        <p class="mb-0">&copy; 2023 Сервисный центр Петра Первого. Все права защищены.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <div class="popup-header">
+      <h3 id="popup-title"></h3>
+      <span class="close" onclick="hidePopup()">&times;</span>
+    </div>
+    <div class="popup-body">
+      <div class="popup-icon">⚠</div>
+      <div class="popup-text">Запрещено на территории Российской Федерации!</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleAnswer(answerId, buttonId) {
+    var answer = document.getElementById(answerId);
+    var button = document.getElementById(buttonId);
+    if (answer.style.display === "none") {
+      answer.style.display = "block";
+      button.innerText = "-";
+    } else {
+      answer.style.display = "none";
+      button.innerText = "+";
+    }
+  }
+</script>
+<script src="js/popupScript.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

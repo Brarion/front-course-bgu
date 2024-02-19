@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пётр I</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/popupScript.js"></script>
+</head>
+<body>
+
+<!-- Навбар -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/favicon/android-chrome-192x192.png" style="width: 50px; height: auto" alt="Логотип">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="priceList.html">Прайс-лист</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Галерея</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#account">Личный кабинет</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Приветственное сообщение и краткое описание услуг -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Добро пожаловать на сайт сервиса Петра Первого!</h1>
+                <p>Мы оказываем услуги населению по ремонту компьютерной техники и наша основная специализация - материнские платы различных производителей. Наша команда опытных специалистов готова помочь вам в восстановлении работоспособности вашей компьютерной техники.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/1_1.png" style="width: 80%; height: auto;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Преимущества и особенности предоставляемых услуг -->
+<section class="bg-rgba py-5" style="background-color: rgba(0,0,0,0.01)  ">
+    <div class="container">
+        <h2 class="text-center mb-4">Преимущества наших услуг</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Быстрый и надежный ремонт</h5>
+                        <p class="card-text">Мы обеспечиваем быстрый и качественный ремонт, чтобы вы могли как можно скорее вернуться к работе.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Опытные специалисты</h5>
+                        <p class="card-text">Наша команда состоит из опытных и квалифицированных специалистов, которые знают все тонкости компонентного и самого непредсказауемого ремонта.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Доступные цены</h5>
+                        <p class="card-text">Прайс-лист наших услуг имеет очень гибкую ценовую политику и даже в недорогих ремонтах используются самые качественные расходные материалы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контактная информация и форма обратной связи -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Свяжитесь с нами</h2>
+                <span></span>
+                <br>
+                <p>Если у вас есть вопросы или вам требуется помощь, заполните форму ниже, и мы свяжемся с вами в кратчайшие сроки.</p>
+                <form>
+                    <div class="form-group mb-2">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Введите ваш номер телефона">
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="message">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-start">
+                <img src="img/footerLogo.jpg" alt="Логотип" height="55">
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <a href="#" class="btn btn-primary me-2" onclick="showPopup('Facebook')">Facebook</a>
+                <a href="#" class="btn btn-primary me-2" onclick="showPopup('Twitter')">Twitter</a>
+                <a href="#" class="btn btn-primary me-2" onclick="showPopup('Instagram')">Instagram</a>
+                <p class="mb-0">Телефон: +7 123 456 789</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="mb-0">&copy; 2023 Сервисный центр Петра Первого. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h3 id="popup-title"></h3>
+            <span class="close" onclick="hidePopup()">&times;</span>
+        </div>
+        <div class="popup-body">
+            <div class="popup-icon">⚠</div>
+            <div class="popup-text">Запрещено на территории Российской Федерации!</div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

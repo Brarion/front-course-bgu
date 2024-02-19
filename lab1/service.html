@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пётр I</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/popupScript.js"></script>
+</head>
+<body>
+<!-- Навбар -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/favicon/android-chrome-192x192.png" style="width: 50px; height: auto" alt="Логотип">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="aboutUs.html">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="priceList.html">Прайс-лист</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Галерея</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#account">Личный кабинет</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Контент страницы -->
+<section class="services">
+  <div class="container">
+    <h2 style="">Услуги</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="service-block">
+          <div class="service-content">
+            <h3 class="service-title">Ремонт материнских плат</h3>
+            <p class="service-description">Мы восстанавливаем функциональность <br> материнской платы, чтобы ваш компьютер <br>работал без сбоев и неполадок</p>
+          </div>
+          <img src="img/services/motherboard.jpg" alt="Фото ремонта материнской платы" class="service-image">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="service-block">
+          <div class="service-content">
+            <h3 class="service-title">Обслуживание компьютеров <br>и игровых ноутбуков</h3>
+            <p class="service-description">Мы предлагаем полное обслуживание <br>вашего компьютера или игрового ноутбука, <br>чтобы он всегда работал на максимальной производительности.</p>
+          </div>
+          <img src="img/services/TO.jpg" alt="Фото обслуживания" class="service-image">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="service-block">
+          <div class="service-content">
+            <h3 class="service-title">Компонентный ремонт <br>комплектующих ПК<br></h3>
+            <p class="service-description">Мы осуществляем профессиональный ремонт комплектующих, <br>чтобы вы могли продолжать использовать <br>надежные и эффективные компоненты</p>
+          </div>
+          <img src="img/services/videocard.jpg" alt="Фото компонентного ремонта" class="service-image">
+        </div>
+      </div>
+      </div>
+      <div class="col-md-12">
+        <div class="service-block">
+          <div class="service-content">
+            <h3 class="service-title">Прочие услуги</h3>
+            <p class="service-description">Мы специализируемся не только на ПК!<BR>Также мы можем починить мелочёвку вроде проводов в наушниках.</p>
+          </div>
+          <img src="img/services/stuff.jpg" alt="Фото мелких услуг" class="service-image">
+        </div>
+      </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Футер -->
+<footer class="bg-light py-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-center text-lg-start">
+        <img src="img/footerLogo.jpg" alt="Логотип" height="55">
+      </div>
+      <div class="col-lg-6 text-center text-lg-end">
+        <a href="#" class="btn btn-primary me-2" onclick="showPopup('Facebook')">Facebook</a>
+        <a href="#" class="btn btn-primary me-2" onclick="showPopup('Twitter')">Twitter</a>
+        <a href="#" class="btn btn-primary me-2" onclick="showPopup('Instagram')">Instagram</a>
+        <p class="mb-0">Телефон: +7 123 456 789</p>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col text-center">
+        <p class="mb-0">&copy; 2023 Сервисный центр Петра Первого. Все права защищены.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <div class="popup-header">
+      <h3 id="popup-title"></h3>
+      <span class="close" onclick="hidePopup()">&times;</span>
+    </div>
+    <div class="popup-body">
+      <div class="popup-icon">⚠</div>
+      <div class="popup-text">Запрещено на территории Российской Федерации!</div>
+    </div>
+  </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
