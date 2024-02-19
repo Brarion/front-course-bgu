@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.canvas-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.hotspot {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+.canvas-container {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden; /* Hide hotspot overflow */
+}
+
+.hotspot {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.hotspot:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
