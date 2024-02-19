@@ -12,6 +12,5 @@ const myType: MyReadOnly<myType> = {
     description: "foobar",
 };
 
-// Errors
-myType.title = "Hello"; // попытка изменить рид-онли значение
-myType.description = "barFoo";
+myType.title = "Hello"; // примеры ошибки
+myType.description = "barFoo"; // попытка изменить рид-онли значение
