@@ -1,3 +1,6 @@
-## Выполненные лабораторные работы: [№3](https://vk.com/doc128137441_676231811?hash=2aMxW2yNML3yUUZzivt2BsMChELs1nawi6uHEgfboKc&dl=G6cA4RCm3V89dzUyelY979Mds2JBHelbjI7YHkzLZAo)
+# Выполненные лабораторные работы: 
+## [№1](https://github.com/Dopaminos/front-course-bgu/tree/main/lab1)
+## [№2](https://github.com/Dopaminos/front-course-bgu/tree/main/lab2)
+## [№3](https://github.com/Dopaminos/front-course-bgu/tree/main/lab3)
 # Вариант 9
 
