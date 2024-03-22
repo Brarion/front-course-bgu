@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&family=Unbounded:wght@300&display=swap');
+
+body {
+    font-family: 'Unbounded', sans-serif; /**/
+    background-color: #b4b4b4; /**/
+    font-size: 3vh; /**/
+    margin-left: 10vw; /*Отступ всего от сторон*/
+    margin-right: 10vw; /**/
+}
+
+#logo {
+    width: 15vh; /*Размер картинки относительно экрана (вроде)*/
+}
+
+figure {
+    margin: 0; /*Убрать внешний отступ*/
+}
+
+nav li {
+    display: flex; /**/
+    align-items: center; /**/
+}
+
+nav ul {
+    display: flex; /**/
+    justify-content: space-around; /**/
+}
+
+nav a {
+    font-size: 4vh; /**/
+    text-decoration: none; /**/
+    color: #000000; /**/
+}
+
+header {
+    width: 78.9vw; /*Ширина головы*/
+    position: fixed; /**/
+    top:0; /*У фиксированного элемента нет отступа сверху*/
+}
+
+
+aside, footer, article, nav {
+    background-color: rgba(255, 255, 255, 1); /**/
+    margin-bottom: 2vh; /**/
+    border: 0.5vh solid #000000; /**/
+}
+
+aside, footer, article{
+    padding: 1vw 3vw; /*Отступы внутреннего контента*/
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0; /*Убрать внешние отступы*/
+    text-align: center; /**/
+}
+
+#services ul, aside ul {
+    list-style: none; /*Убрать стиль списка*/
+}
+
+#services section {
+    display: flex; /**/
+    margin-bottom: 2vh; /**/
+    border: 0.5vh solid #000000; /**/
+    background-color: rgba(255, 255, 255, 1); /**/
+    padding-left: 1vw; /*Отступ слева*/
+}
+
+
+#services img {
+    border: 0.5vh solid #000000; /**/
+    width: 25vw; /*Фиксация ширины*/
+    height: 25vh; /*Фиксация высоты*/
+    align-self: center;
+}
+
+services span {
+    margin: 0;
+    padding: 0;
+}
+.catalogItem li {
+    margin-top: 2.75vh;
+}
+
+iframe {
+    border-radius: 1vw;
+}
+
+form {
+    display: flex; /**/
+    flex-direction: column; /*В колонну их*/
+    align-items: center; /**/
+    margin: 0 auto; /*Внешний отступ*/
+    max-width: 30vw; /**/
+    padding: 2vh 3vh; /*Распределение внутреннего контента*/
+    border: 1vh solid #000000; /**/
+}
+
+input, select, textarea {
+    font-family: 'Unbounded', sans-serif; /**/
+    padding: 1vh; /**/
+    border: 0.5vh solid #000000; /**/
+    width: 30vw; /**/
+    margin-bottom: 2vh; /**/
+    font-size: 2vh; /**/
+}
+
+.serviceInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.employeeInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serviceInfo span {
+    display: block;
+}
+
+form {
+    display: flex;
+    background-color: rgba(255, 255, 255, 1); /**/
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 30vw;
+}
+
+input, select, textarea {
+    font-family: 'Unbounded', sans-serif;
+    padding: 1vh;
+    border: 0.5vh solid #000000;
+    width: 30vw;
+    margin-bottom: 2vh;
+    font-size: 2vh;
+}
+
+form{
+    font-family: 'Unbounded', sans-serif;
+    padding: 2vh 2vw;
+    font-size: 3vh;
+    border: 1vh solid #000000;
+}
+
+button {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 3vh;
+    background-color: #000000;
+    color: #FFF;
+    padding: 2vh 2vw;
+    cursor: pointer;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;
+}
+
+.left-form {
+    flex: 1;
+    order: 1;
+}
+
+.right-form {
+    flex: 1;
+    order: 2;
+}
+
+

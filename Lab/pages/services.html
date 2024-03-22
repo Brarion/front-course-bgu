@@ -1,0 +1,141 @@
+<!--Есть-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grace view</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+<section style="height: 25vh"></section>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <figure>
+                    <img src="../img/img.png" id="logo" alt="Логотип">
+                </figure>
+            </li>
+            <li><a href="index.html">Информация</a></li>
+            <li><a href="../pages/services.html">Услуги</a></li>
+            <li><a href="../pages/prices.html">Скидки</a></li>
+            <li><a href="../pages/contacts.html">Контакты</a></li>
+            <li>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article id="services">
+        <h2>Услуги</h2>
+        <section>
+            <img src="../img/null_picture_BaA.png">
+            <div class="serviceInfo">
+                <ul class="catalogItem">
+                    <li><h3>Парикмахер:</h3></li>
+                    <li><span>Удаление причёски</span><span>200 руб</span></li>
+                    <li><span>Укорочение причёски</span><span>300 руб</span></li>
+                    <li><span>Окраска</span><span>400 руб</span></li>
+                    <li><span>Свой стиль</span><span>1000 руб</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <img src="../img/null_picture_BaA.png">
+            <div class="serviceInfo">
+                <ul class="catalogItem">
+                    <li><h3>СПА-процедуры:</h3>
+                    <li><span>Расслабляющий массаж</span><span>300 руб</span></li>
+                    <li><span>Увлажняющий массаж</span><span>450 руб</span></li>
+                    <li><span>Эксфолиация</span><span>600 руб</span></li>
+                    <li><span>Очищающая процедура</span><span>950 руб</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <img src="../img/null_picture_BaA.png">
+            <div class="serviceInfo">
+                <ul class="catalogItem">
+                    <li><h3>Маникюр и педикюр:</h3>
+                    <li><span>Классический маникюр</span><span>300 руб</span></li>
+                    <li><span>Европейский маникюр</span><span>450 руб</span></li>
+                    <li><span>Спа-маникюр</span><span>800 руб</span></li>
+                    <li><span>Медицинский педикюр</span><span>1200 руб</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <img src="../img/null_picture_BaA.png">
+            <div class="serviceInfo">
+                <ul class="catalogItem">
+                    <li><h3>Депиляция:</h3>
+                    <li><span>Восковая депиляция ног</span><span>800 руб</span></li>
+                    <li><span>Шугаринг для области бикини</span><span>1200 руб</span></li>
+                    <li><span>Депиляция подмышек воском</span><span>400 руб</span></li>
+                    <li><span>Лазерная эпиляция верхней губы</span><span>200 руб</span></li>
+                </ul>
+            </div>
+        </section>
+    </article>
+    <section class="form-section">
+        <div class="left-form">
+            <form action="submit">
+                <h1 style="margin-bottom: 35px">Записаться на услугу</h1>
+                <div>
+                    <label>Категория</label>
+                    <select name="category" id="service" required>
+                        <option value="">Выберите категорию</option>
+                        <option value="1">Парикмахер: Удаление причёски</option>
+                        <option value="2">Парикмахер: Укорочение причёски</option>
+                        <option value="3">Парикмахер: Окраска</option>
+                        <option value="4">Парикмахер: Свой стиль</option>
+
+                        <option value="5">СПА-процедуры: Расслабляющий массаж</option>
+                        <option value="6">СПА-процедуры: Увлажняющий массаж</option>
+                        <option value="7">СПА-процедуры: Эксфолиация</option>
+                        <option value="8">СПА-процедуры: Очищающая процедура</option>
+
+                        <option value="9">Маникюр и педикюр: Классический маникюр</option>
+                        <option value="10">Маникюр и педикюр: Европейский маникюр</option>
+                        <option value="11">Маникюр и педикюр: Спа-маникюр</option>
+                        <option value="12">Маникюр и педикюр: Медицинский педикюр</option>
+
+                        <option value="13">Депиляция: Восковая депиляция ног</option>
+                        <option value="14">Депиляция: Шугаринг для области бикини</option>
+                        <option value="15">Депиляция: Депиляция подмышек воском</option>
+                        <option value="16">Депиляция: Лазерная эпиляция верхней губы</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Выберите время</label>
+                    <input type="datetime-local" name="datetime" id="datetime" required>
+                </div>
+                <div>
+                    <label>Введите имя</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <button type="submit" onclick="submitForm(event)">Записаться</button>
+            </form>
+        </div>
+        <div class="right-form">
+            <form>
+                <h3>Генератор случайной СПА-услуги</h3>
+                <h6>Если не знаешь, что выбрать сегодня</h6>
+                <textarea style="color: #b4b4b4; text-align: center" id="randomSpaService" readonly>Нажми на кнопку ниже</textarea>
+                <button type="button" onclick="generator(event)"> Подобрать</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+</body>
+</html>
+
